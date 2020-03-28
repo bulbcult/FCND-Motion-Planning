@@ -26,6 +26,7 @@ def create_grid(data, drone_altitude, safety_distance):
     # Initialize an empty grid
     grid = np.zeros((north_size, east_size))
 
+    
     # Populate the grid with obstacles
     for i in range(data.shape[0]):
         north, east, alt, d_north, d_east, d_alt = data[i, :]
